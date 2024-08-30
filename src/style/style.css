@@ -1,10 +1,106 @@
+:root{
+    --header-bg-color : #1F2326;
+    --description-color : #1F2326;
+    --white : #fff;
+    --black : #000;   
+    --red-color : #FF4656;
+    --gray-color : #C4C4C4;
+}
+
 * ,
 *::before , 
 *::after{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url(../../assets/fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url(../../assets/fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url(../../assets/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url(../../assets/fonts/Montserrat-Light.ttf);
 }
 body{
-    
+    font-family: 'Montserrat-Regular';
+    width: 100%;
+    /* overflow-x: hidden; */
+}
+/* header area */
+.header{
+    background: var(--header-bg-color);
+    display: flex;
+    align-items: center;
+    padding: 15px 50px;
+}
+/* logo wrappers */
+.logo-wrapper{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 40px;
+    cursor: pointer;
+}
+.riot-wrapper{
+    padding-right: 50px;
+    border-right: 2px solid var(--white);
+}
+.riot-wrapper > img{
+    width: 50px !important;
+}
+.valorant-wrapper{
+    padding-left: 50px;
+    margin-right: 50px;
+}
+/* navbar */
+.navbar{
+    display: flex;
+    align-items: center;
+}
+li{
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: 'Montserrat-Bold';
+    font-size: .7rem;
+    margin: 0px 15px;
+    transition: color .2s ease-out;
+    cursor: pointer;
+}
+li:hover{
+    color: var(--red-color);
+}
+/* user profile wrapper */
+.user-profile-wrapper{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.user-name{
+    color: var(--white);
+    font-family: 'Montserrat-Bold';
+    text-transform: capitalize;
+    margin-left: 20px;
+    transition: color .2s ease-out;
+    cursor: pointer;
+    font-size: .7rem;
+}
+.avatar{
+    border-radius: 50%;
+    width: 35px ;
+}
+.user-name:hover{
+    color: var(--red-color);
 }
