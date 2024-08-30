@@ -104,3 +104,23 @@ li:hover{
 .user-name:hover{
     color: var(--red-color);
 }
+/* *********************** */
+/* main */
+/* *********************** */
+/* hero-section */
+.hero-section{
+    /* height: 90vh; */
+    background-image: url(../../assets/img/background-img/background.png) , linear-gradient(var(--red-color) , var(--red-color));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+/* slider */
+.slider-wrapper{
+    padding: 30px 0px 30px 20px;
+}
+.logo-agents{
+    margin-left: 40px;
+    margin-right: 20px;
+}
