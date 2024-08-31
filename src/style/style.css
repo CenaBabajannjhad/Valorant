@@ -1,126 +1,205 @@
-:root{
-    --header-bg-color : #1F2326;
-    --description-color : #1F2326;
-    --white : #fff;
-    --black : #000;   
-    --red-color : #FF4656;
-    --gray-color : #C4C4C4;
+:root {
+  --header-bg-color: #1f2326;
+  --description-color: #1f2326;
+  --white: #fff;
+  --black: #000;
+  --red-color: #ff4656;
+  --gray-color: #c4c4c4;
 }
 
-* ,
-*::before , 
-*::after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 @font-face {
-    font-family: 'Montserrat-Bold';
-    src: url(../../assets/fonts/Montserrat-Bold.ttf);
+  font-family: "Montserrat-Bold";
+  src: url(../../assets/fonts/Montserrat-Bold.ttf);
 }
 @font-face {
-    font-family: 'Montserrat-Medium';
-    src: url(../../assets/fonts/Montserrat-Medium.ttf);
+  font-family: "Montserrat-Medium";
+  src: url(../../assets/fonts/Montserrat-Medium.ttf);
 }
 @font-face {
-    font-family: 'Montserrat-Regular';
-    src: url(../../assets/fonts/Montserrat-Regular.ttf);
+  font-family: "Montserrat-Regular";
+  src: url(../../assets/fonts/Montserrat-Regular.ttf);
 }
 @font-face {
-    font-family: 'Montserrat-Light';
-    src: url(../../assets/fonts/Montserrat-Light.ttf);
+  font-family: "Montserrat-Light";
+  src: url(../../assets/fonts/Montserrat-Light.ttf);
 }
-body{
-    font-family: 'Montserrat-Regular';
-    width: 100%;
-    /* overflow-x: hidden; */
+@font-face {
+  font-family: "DrukWide-Bold";
+  src: url(../../assets/fonts/DrukWide-Bold-Trial.otf);
+}
+@font-face {
+  font-family: "DrukWide-Medium";
+  src: url(../../assets/fonts/DrukWide-Medium-Trial.otf);
+}
+body {
+  font-family: "Montserrat-Regular";
+  width: 100%;
+  overflow-x: hidden;
 }
 /* header area */
-.header{
-    background: var(--header-bg-color);
-    display: flex;
-    align-items: center;
-    padding: 15px 50px;
+.header {
+  background: var(--header-bg-color);
+  display: flex;
+  align-items: center;
+  padding: 15px 50px;
 }
 /* logo wrappers */
-.logo-wrapper{
-    display: flex;
-    align-items: center;
+.logo-wrapper {
+  display: flex;
+  align-items: center;
 }
-.logo{
-    width: 40px;
-    cursor: pointer;
+.logo {
+  width: 40px;
+  cursor: pointer;
 }
-.riot-wrapper{
-    padding-right: 50px;
-    border-right: 2px solid var(--white);
+.riot-wrapper {
+  padding-right: 50px;
+  border-right: 2px solid var(--white);
 }
-.riot-wrapper > img{
-    width: 50px !important;
+.riot-wrapper > img {
+  width: 50px !important;
 }
-.valorant-wrapper{
-    padding-left: 50px;
-    margin-right: 50px;
+.valorant-wrapper {
+  padding-left: 50px;
+  margin-right: 50px;
 }
 /* navbar */
-.navbar{
-    display: flex;
-    align-items: center;
+.navbar {
+  display: flex;
+  align-items: center;
 }
-li{
-    text-transform: uppercase;
-    color: var(--white);
-    font-family: 'Montserrat-Bold';
-    font-size: .7rem;
-    margin: 0px 15px;
-    transition: color .2s ease-out;
-    cursor: pointer;
+li {
+  text-transform: uppercase;
+  color: var(--white);
+  font-family: "Montserrat-Bold";
+  font-size: 0.7rem;
+  margin: 0px 15px;
+  transition: color 0.2s ease-out;
+  cursor: pointer;
 }
-li:hover{
-    color: var(--red-color);
+li:hover {
+  color: var(--red-color);
 }
 /* user profile wrapper */
-.user-profile-wrapper{
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+.user-profile-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
-.user-name{
-    color: var(--white);
-    font-family: 'Montserrat-Bold';
-    text-transform: capitalize;
-    margin-left: 20px;
-    transition: color .2s ease-out;
-    cursor: pointer;
-    font-size: .7rem;
+.user-name {
+  color: var(--white);
+  font-family: "Montserrat-Bold";
+  text-transform: capitalize;
+  margin-left: 20px;
+  transition: color 0.2s ease-out;
+  cursor: pointer;
+  font-size: 0.7rem;
 }
-.avatar{
-    border-radius: 50%;
-    width: 35px ;
+.avatar {
+  border-radius: 50%;
+  width: 35px;
 }
-.user-name:hover{
-    color: var(--red-color);
+.user-name:hover {
+  color: var(--red-color);
 }
 /* *********************** */
 /* main */
 /* *********************** */
 /* hero-section */
-.hero-section{
-    /* height: 90vh; */
-    background-image: url(../../assets/img/background-img/background.png) , linear-gradient(var(--red-color) , var(--red-color));
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+.hero-section {
+  /* height: 90vh; */
+  background-image: url(../../assets/img/background-img/background.png),
+    linear-gradient(var(--red-color), var(--red-color));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* slider */
-.slider-wrapper{
-    padding: 30px 0px 30px 20px;
+.slider-wrapper {
+  padding: 30px 0px 30px 20px;
+  display: flex;
+  column-gap: 50px;
+  overflow-x: scroll;
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
-.logo-agents{
-    margin-left: 40px;
-    margin-right: 20px;
+.slider-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.intro-slides-title {
+  width: 170px;
+  height: 530px;
+  padding-top: 30px;
+  margin-left: 30px;
+  position: relative;
+}
+.logo-agents {
+  position: absolute;
+  bottom: 10px;
+}
+.agents {
+  font-family: "DrukWide-Bold";
+  font-size: 5rem;
+  transform: rotate(90deg);
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--white);
+  padding-bottom: 30px;
+}
+/* slide */
+.slide {
+  background-color: var(--description-color);
+  padding: 10px;
+}
+.slide-container {
+  width: 200px;
+  position: relative;
+}
+.agent-name {
+  font-family: "DrukWide-Bold";
+  font-size: 3rem;
+  transform: rotate(90deg);
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--white);
+  position: absolute;
+  top: 30%;
+  right: 20%;
+  text-transform: uppercase;
+}
+.agent-region {
+  width: 100%;
+  color: var(--red-color);
+  font-family: "DrukWide-Bold";
+  transform: rotate(90deg);
+  position: absolute;
+  top: 22%;
+  right: 37%;
+}
+.agent-img {
+  width: 100%;
+}
+.powers-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+  margin-top: 20px;
+  padding: 10px 0px 10px 0px;
+  width: 100%;
+  position: absolute;
+  left: 10%;
+  background-color: var(--description-color);
+  border: 1px solid var(--white);
 }
