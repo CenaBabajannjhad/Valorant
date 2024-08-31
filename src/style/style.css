@@ -162,6 +162,7 @@ li:hover {
   background-color: var(--description-color);
   padding: 10px;
 }
+/* image parent  ##shayan## */
 .slide-container {
   width: 200px;
   position: relative;
@@ -187,8 +188,10 @@ li:hover {
   top: 22%;
   right: 37%;
 }
+/* image sizes ##shayan## */
 .agent-img {
-  width: 100%;
+  width: 300%;
+
 }
 .powers-logo {
   display: flex;
