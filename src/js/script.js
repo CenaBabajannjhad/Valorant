@@ -7,10 +7,21 @@ const API = "https://valorant-api.com/v1/agents";
 
 getAgents();
 async function getAgents() {
-  const res = await fetch(API);
-  const json = await res.json();
+  try{
+    const res = await fetch(API);
 
-  return json;
+    if(res.ok){
+      const json = await res.json();
+      return json;
+
+    }else{
+      throw new Error(res.status)
+    }
+    
+  }catch(err){
+    console.err(err)
+  }
+
 }
 
 async function setData() {

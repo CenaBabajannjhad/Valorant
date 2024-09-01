@@ -45,6 +45,7 @@ body {
   font-family: "Montserrat-Regular";
   width: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 /* header area */
 .header {
@@ -130,6 +131,8 @@ li:hover {
   display: flex;
   column-gap: 50px;
   overflow-x: scroll;
+  scroll-behavior: smooth;
+
 
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
